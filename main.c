@@ -5,22 +5,21 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i=0;
-	char str[4];
+	char src[] = "THe worst things to eat before you sleep";
+	char dst[100];
 	
-	str[0] = 'a';
-	str[1] = 'b';
-	str[2] = 'c';
-	str[3] = '\0';
 	
-	printf("%s\n", str);
+	char str[30]= "happy C programming";
 	
-	while(str[i] != '\0'){
-		
-		printf("%c",str[i]);
-		
-		i++;
-	}
+	
+	
+	strcpy(dst, src);
+	
+	printf("copied string : %s\n", dst);
+	
+	printf("length of \"%s\": %i\n", str, strlen(str));
+	
+	
 	
 	return 0;
 }
